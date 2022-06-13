@@ -1,5 +1,6 @@
 body{
     background-color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .wrapper{
@@ -9,7 +10,7 @@ body{
 
 h2{
     font-weight: 600;
-    font-family:'Courier New', Courier, monospace;
+    color: rgba(255, 68, 0, 0.801);
 }
 
 #generate-data{
@@ -19,4 +20,34 @@ h2{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    transition:all 1s ease;
+}
+
+#generate-data:hover{
+    padding: 20px;
+    background-color: rgba(255, 68, 0, 0.801);
+}
+
+.services-table{
+    margin-top: 50px;
+    display: none;
+}
+
+table{
+    width: 100%;
+    color: rgba(255, 68, 0, 0.801);
+    border:none;
+    border-spacing: 0;
+
+}
+
+tr:nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+th, td{
+    padding: 20px;
 }
