@@ -6,6 +6,8 @@ body{
 .wrapper{
     margin: auto;
     width: 60%;
+    border-radius: 10px;
+    height: 100%;
 }
 
 h2{
@@ -41,7 +43,16 @@ table{
     color: rgba(255, 68, 0, 0.801);
     border:none;
     border-spacing: 0;
+    counter-reset: rowNumber;
+    padding-bottom: 20px;
+}
 
+table tr > td:first-child{
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before{
+    content: counter(rowNumber);
 }
 
 tr:nth-child(odd){
@@ -50,4 +61,20 @@ tr:nth-child(odd){
 
 th, td{
     padding: 20px;
+}
+
+.waiver{
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+
+tr:nth-child(even) input {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+td:not(#service-name){
+    text-align: center;
 }
