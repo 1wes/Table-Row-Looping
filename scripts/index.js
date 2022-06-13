@@ -15,6 +15,10 @@ $(()=>{
                 }
                 
             }
+
         })
+
+        // display the table after it is loaded with data
+        $(".services-table").slideDown(800);
     })
 });
