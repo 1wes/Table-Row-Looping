@@ -1,8 +1,15 @@
-let $=jQuery;
-
-$(document).ready(()=>{
+$(()=>{
 
     $("#generate-data").on("click", ()=>{
-        alert("A button must have been clicked");
+        $.ajax({
+            url:"../../Table-Row-Looping/server/index.php",
+            method:"get", 
+            type:"application/json",
+            success:(data,status)=>{
+
+                let services_list=JSON.parse(data);
+                
+            }
+        })
     })
-})
+});
