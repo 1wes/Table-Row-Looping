@@ -1,0 +1,22 @@
+body{
+    background-color: whitesmoke;
+}
+
+.wrapper{
+    margin: auto;
+    width: 60%;
+}
+
+h2{
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#generate-data{
+    background-color: blue;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
