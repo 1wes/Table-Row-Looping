@@ -18,7 +18,7 @@ $(()=>{
                         <td id="service-name">${services_list[i].name}</td>
                         <td id="service-cost">${services_list[i].cost}</td>
                         <td><input class="waiver" type="text" placeholder="Enter waiver amount" name="waiver-amount" ></td> //amount waived
-                        <td></td> //blance to pay
+                        <td></td> //balance to pay
                     </tr>`)
                 }
                 

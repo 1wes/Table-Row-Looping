@@ -55,8 +55,12 @@ table tr td:first-child::before{
     content: counter(rowNumber);
 }
 
-tr:nth-child(odd){
+tr:nth-child(even){
     background-color: rgba(128, 128, 128, 0.1);
+}
+
+th{
+    background-color: rgba(128, 128, 128, 0.1) ;
 }
 
 th, td{
@@ -71,10 +75,26 @@ th, td{
 }
 
 
-tr:nth-child(even) input {
+tr:nth-child(odd) input {
     background-color: rgba(128, 128, 128, 0.1);
 }
 
 td:not(#service-name){
     text-align: center;
+}
+
+.service-name-header{
+    text-align: left;
+}
+
+tr input:focus {
+    border:1px solid coral;
+    color: coral;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+tr input{
+    color: coral;
+    font-family: 'Courier New', Courier, monospace;
 }
